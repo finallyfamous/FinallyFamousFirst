@@ -1,0 +1,16 @@
+#include <iostream>
+#include <queue> //std::queue
+//implementing a function from the queue class.
+//http://www.cplusplus.com/reference/queue/queue/
+int main() {
+  std::queue<int> myqueue;
+  myqueue.push(77);
+  myqueue.push(16);
+
+  myqueue.front() -= myqueue.back();
+  //77 - 16 = 61
+  std::cout << "myqueue.front() is now " << myqueue.front() << '\n';
+
+  return 0;
+  //output: myqueue.front() is now 61, this action shows the front method.
+}
